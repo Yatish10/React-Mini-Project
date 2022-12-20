@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  // new Date(year, month, day, hours, min, sec, millisec)
+let curDate = new Date(2022,12,20,2);
+curDate = curDate.getHours();
+let greeting = '';
+const cssStyle = { };
+
+if(curDate >= 1 && curDate < 12){
+  greeting = 'Good Morning !';
+  cssStyle.color = 'blue';
+
+} else if(curDate >= 12 && curDate < 20){
+  greeting = 'Good Afternoon !';
+  cssStyle.color = 'orange';
+
+}else{
+  greeting = 'Good Night !';
+  cssStyle.color = 'green';
+}
+
+return(
+  <>
+    <div>
+      <h1> Hello Sir, <span style= {cssStyle}> { greeting } </span></h1>
     </div>
-  );
+  </>
+);
 }
 
 export default App;
