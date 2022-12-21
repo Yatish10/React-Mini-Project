@@ -1,14 +1,14 @@
 * {
   margin: 0px;
   padding: 0px;
-  background-color: rgb(225, 171, 209);
+  background-color: rgb(220, 186, 186)
 }
 
 .heading_style {
-  margin-top: 0;
-  padding: 20px 20px;
-  background-color: darkgray;
-  color: darkcyan;
+  margin-bottom: 30;
+  padding: 30px 0px;
+  background-color: black;
+  color: red;
   text-align: center;
   font-weight: bold;
   font-style: oblique;

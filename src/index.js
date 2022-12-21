@@ -3,28 +3,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Card from "./Cards";
 import "./index.css";
+import Sdata from './Sdata';
 
 ReactDOM.render( 
 <>
-  <Card 
-    imgsrc = "dark.jpg"
-    title = " A Netflix Orignal Series"
-    sname = "DARK"
-    link = "https://www.netflix.com/in/title/80990668?source=35"
-  /> 
-  <Card 
-    imgsrc = "extracurricular.jpg"
-    title = " A Netflix Orignal Series"
-    sname = "Extra Curricular"
-    link = "https://www.netflix.com/in/title/80990668"
-  />
-  <Card 
-    imgsrc = "strangerthings.jpg"
-    title = " A Netflix Orignal Series"
-    sname = "Stranger Things"
-    link = "https://www.netflix.com/in/title/80057281"
+  <h1 className='heading_style'> List of Top 5 Netflix Series in 2022 </h1>
 
-  />
+  {Sdata.map((val, index) => {
+  console.log(index);
+  return(
+    <Card 
+    imgsrc = { val.imgsrc}
+    title =  { val.title}
+    sname =  { val.sname}
+    link =   { val.link}
+  /> 
+  );
+  })}
+
 </>, 
 document.getElementById("root"));
 
