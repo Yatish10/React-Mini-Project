@@ -27,7 +27,7 @@ const Sdata = [
         imgsrc: "the-vampire-diaries.jpg",
         title: " A Netflix Orignal Series",
         sname: "The Vampire Diaries ",
-        link: "https://www.netflix.com/in/title/70143860"
+        link: "https://www.primevideo.com/detail/The-Vampire-Diaries/0HG2QOPONEONZPP2ZXNMA6M8Q7"
     },
 
 
